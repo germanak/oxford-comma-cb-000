@@ -4,7 +4,7 @@ def oxford_comma(array)
   elsif array.length == 2
     array.join(' and ')
   elsif array.length > 2
-    array[0].join(', ') + " and #{array.last}"
+    array[0..array.length].join(', ') + " and #{array.last}"
   else
     nil
   end
